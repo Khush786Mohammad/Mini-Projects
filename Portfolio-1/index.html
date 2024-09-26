@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio-Khush</title>
+</head>
+<body class="p-0 m-0 overflow-x-hidden box-border">
+    <div class="wrapper h-[100vh] w-[100vw] scroll-smooth">
+        <div class="container max-w-[85rem] mx-auto">
+            <div class="navbar flex justify-between items-center border-b-2">
+                <div class="left-section flex justify-center items-center cursor-pointer select-none">
+                    <div class="navbar-left-logo text-[4rem]"><i class="fa-solid fa-k name-logo"></i></div>
+                    <div class="navbar-left-text text-[2rem] font-semibold">hush Mohammad</div>
+                </div>
+                <div class="right-section flex gap-8 px-4 text-[1.3rem] font-normal">
+                    <div class="hover:font-semibold"><a href="#" class="">Home</a></div>
+                    <div class="hover:font-semibold"><a href="#" class="">About</a></div>
+                    <div class="hover:font-semibold"><a href="#" class="">Projects</a></div>
+                    <div class="hover:font-semibold"><a href="#" class="">Contact</a></div>
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+        <div class="hero-section flex justify-between">
+            <div class="left-text-part flex flex-col justify-center max-w-[55%] gap-[2rem]">
+                <h3 class="name-text font-normal text-[2.25rem] text-[#343d68]">Hi! Khush Mohammad</h3>
+                <h1 class="info-text text-[2.813rem] text-[#343d68] leading-[2.813rem]">
+                    I am a <span class="role text-purple-500 font-medium text-[2.8rem]"></span>
+                </span></h1>
+                <div resume-btn  class="btn1 w-[8rem] h-[3rem] text-center text-[1.05rem] pt-2 text-white bg-[#f83e3e]
+                border-[3px] border-[#f83e3e] cursor-pointer select-nonen">Download CV</div>
+            </div>
+            <div class="right-image-part mt-[5rem] px-8 py-8 border-[1px] bg-[#c5c5c5aa]">
+                <img src="./images/photo.jpg" alt="" class="w-[23rem] h-[26.5rem]">
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    
+    <script>
+        var typeData = new Typed(".role",{
+    strings: [
+        "Front End Developer",
+        "Web Developer",
+        "Problem Solver",
+        "Coder",
+        "Student"
+    ],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1000,
+});
+    </script>
+</body>
+</html>

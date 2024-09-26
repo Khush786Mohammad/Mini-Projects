@@ -1,0 +1,1 @@
+[1] C. C. Bonik, F. Akter, M. H. Rashid and A. Sattar, "A Convolutional Neural Network Based Potato Leaf Diseases Detection Using Sequential Model," 2023 International Conference for Advancement in Technology (ICONAT), Goa, India, 2023, pp. 1-6, doi: 10.1109/ICONAT57137.2023.10080063.

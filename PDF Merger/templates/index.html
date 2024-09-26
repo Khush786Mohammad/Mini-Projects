@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <style>
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top:50px;
+        }
+        .form-group{
+            display:flex;
+            flex-direction: column;
+            gap:10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-control-file{
+            margin-left: 75px;
+        }
+        #merge-pdfs{
+            font-size:50px;
+        }
+        #exampleFormControlFile1,#label-text{
+            font-size:20px;
+        }
+        #submit-btn{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="merge-pdfs">Merge PDFs</h1>
+        <form method="post" action="/merge" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="exampleFormControlFile1" id="label-text">Select PDFs</label>
+                <input type="file" name="pdfs" class="form-control-file" id="exampleFormControlFile1" multiple accept=".pdf">
+                <input type="submit" value="Submit" id="submit-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

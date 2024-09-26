@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.boxes{
+    @apply flex justify-center items-center p-[5px] text-white font-bold text-[2.3rem];
+}
+
+.active{
+    opacity: 1;
+}
+
+.highlight{
+    @apply bg-green-400;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    
+    <title>Tic Tac Toe</title>
+</head>
+<body class="m-0 p-0 box-border overflow-hidden">
+    <div class="wrapper bg-purple-700 h-[100vh] w-[100vw] font-serif flex flex-col justify-center items-center py-10 gap-[6rem]">
+        <div class="player-info text-white bg-[rgba(219,225,239,0.5)] border-[rgba(219,225,239,0.5)] font-semibold border px-12 py-2 rounded-[1rem] tracking-[1.5px]">
+            <!-- winner name -->
+            Current Player - X
+        </div>
+        <div class="tic-tac-toe bg-[rgba(219,225,239,0.5)] border p-[2rem] border-[rgba(219,225,239,0.5)] w-[90%] max-w-[20rem] grid grid-cols-3 aspect-square rounded-[1rem]">
+            <div class="boxes border-r-[3px] border-b-[3px] border-[#ffffff] cursor-pointer aspect-square" id="box1"></div>
+            <div class="boxes border-r-[3px] border-b-[3px] border-[#ffffff] cursor-pointer aspect-square" id="box2"></div>
+            <div class="boxes border-b-[3px] border-[#ffffff] cursor-pointer aspect-square" id="box3"></div>
+            <div class="boxes border-r-[3px] border-b-[3px] border-[#ffffff] cursor-pointer min-h-[1.4rem] min-w-[1.4rem] aspect-square" id="box4"></div>
+            <div class="boxes border-r-[3px] border-b-[3px] border-[#ffffff] cursor-pointer aspect-square" id="box5"></div>
+            <div class="boxes border-b-[3px] border-[#ffffff] cursor-pointer aspect-square" id="box6"></div>
+            <div class="boxes border-r-[3px] border-[#ffffff] cursor-pointer aspect-square" id="box7"></div>
+            <div class="relative boxes border-r-[3px] border-[#ffffff] cursor-pointer aspect-square" id="box8"></div>
+            <div class="boxes cursor-pointer" id="box9"></div>
+        </div>
+
+        <button class="opacity-0 new-game bg-[rgba(219,255,239,0.5)] border 
+        border-[rgba(219,255,239,0.5)] text-white font-semibold tracking-[1.5px] px-12 py-2 rounded-[1rem]
+        transition-all duration-200 ease-in">New Game</button>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

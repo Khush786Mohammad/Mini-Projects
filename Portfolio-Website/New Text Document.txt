@@ -1,0 +1,13 @@
+Hey Linkedin family,
+
+Recently I created a dummy portfolio website of mine to sharpen my CSS skills.
+
+It was a great learning during the whole project, and understand some very interesting concept in CSS.
+
+
+
+Here is my GitHub repo link: https://github.com/Khush786Mohammad/Portfolio01.git
+
+
+
+Atlast I would to like to give thanks to codehelp for this amazin learning. 😀 
