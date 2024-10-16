@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #eeeeea;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.cards{
+    width: 5rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin: 0 10px;
+    transition: all;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.cards > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cards > .row > .icon {
+    background: #233;
+    color: white;
+    border-radius: 50%;
+    width: 3.125rem;
+    /* height: 3.125rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.938rem;
+}
+
+.cards > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 5rem;
+    width: 32.5rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p{
+    color: #b0b0ba;
+    padding-top: 0.313rem;
+}
+
+.description h4{
+    text-transform: uppercase;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    width: 37.5rem;
+}
+
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important; 
+}
+
+.cards[for="c1"]{
+    background-image: url('./images/1.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.cards[for="c2"]{
+    background-image: url('./images/2.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.cards[for="c3"]{
+    background-image: url('./images/3.png');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.cards[for="c4"]{
+    background-image: url('./images/4.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
